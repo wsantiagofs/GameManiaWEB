@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .menubar1{
+    display:absolute;
+    background-color: #276BA2;
+    width: 100%;
+}
+
+/* .menu .menubar1 .sociallinks .s{
+    display:flex;
+    justify-content: flex-start;
+    display: inline-block;
+}
+
+.menu .menubar1 .userlinks .u{
+    display:flex;
+    justify-content: flex-end;
+    display: inline-block;
+} */
+
+.menubar2{
+    background-color: #13283C;
+    position: flex;
+    width: 100%;
+    height: 256px;
+    left: 0px;
+    top: 59px;
+}
+
+.menubar2 .logo{
+    margin-left: 58px;
+    margin-top: 59px;
+
+}
+
+.menubar2 .searchbar{
+    display:flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    border: 1px whitesmoke;
+    padding: 30px;
+}
+
+.categoria{
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 994px;
+    background-color: #154369;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+
+.categoria a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.categoria .button{
+    background-color: #276BA2;
+    display: inline-block;
+    padding: 10px 50px;
+    color: white;
+}
+
+.categoria .button:hover{
+    background-color: #114e80;
+}
+
+#linhabanner{
+    display: flex;
+    width:100%;
+    border: 20px solid #276BA2;
+}
+
+.menu-background{
+    background-color: #276BA2;
+}
+
+.body{
+    width: 1452px;
+    height: 1649px;
+    left: 0px;
+    top: 994px; 
+    background: linear-gradient(116.09deg, #354967 1.32%, #050505 99.98%, rgba(36, 32, 32, 0.166667) 99.99%, rgba(33, 29, 29, 0) 100%);
+}
+
+footer{
+    position: absolute;
+    width: 1440px;
+    height: 409px;
+    left: 0px;
+    top: 2736px;
+    background: #152634;
+    color: white;
+}
+
+footer a{
+    font-family: 'Inter';
+    font-style: Light;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
