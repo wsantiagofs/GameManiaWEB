@@ -170,24 +170,26 @@
 /*                 MAIN DO SITE                    */
 
 #backbody{
-    display: flex;
+    display: absolute;
     width: 100%;
     height: 2000;
     left: 0px;
-    justify-content: center;
     background: linear-gradient(116.09deg, #354967 1.32%, #050505 99.98%, rgba(36, 32, 32, 0.166667) 99.99%, rgba(33, 29, 29, 0) 100%);
 }
 
-.title1{
+.container1{
+    width: 100%;
+    position: flex;
+}
+
+.title{
     padding-top: 40px;
     text-align: center;
-    position:absolute;
-    
+    position:flex;
 }
 
 .textproduto{
     display: flex;
-    width: 550px;
     height: 74px;
     text-decoration: none;
     color: white;
@@ -199,28 +201,27 @@
     border-radius: 35px;
 }
 
-.catalogo1{
+.catalogo{
     justify-content: center;
     display: flex;
-    padding-top: 110px;
 }
 
-.catalogo1 .containerproduto{
+.catalogo .containerproduto{
     border: 1px solid #000000;
     background-color: #3c3e3f;
     width: 250px;
     height: 370px;
-    margin-top: 7%;
+    margin-top: 3%;
     margin-left: 4%;
     padding: 3px;
 }
 
-.catalogo1 .containerproduto .prod1{
+.catalogo .containerproduto .prod1{
     color: white;
     font-size: 13px;
 }
 
-.catalogo1 .containerproduto .prod2{
+.catalogo .containerproduto .prod2{
     font-family: 'Basic';
     font-style: normal;
     font-weight: 400;
@@ -230,7 +231,7 @@
     color: #ABA5A5;
 }
 
-.catalogo1 .containerproduto .prod3{
+.catalogo .containerproduto .prod3{
     font-family: 'Basic';
     font-style: normal;
     font-weight: 400;
@@ -240,23 +241,112 @@
     color: #0FB600;
 }
 
-.title2{
-    padding-top: 40px;
-    text-align: center;
-    position:absolute;
-    padding-top: 500;
+.bannerpromo{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-right: 50;
 }
 
-.textproduto2{
+.title1{
     display: flex;
-    width: 300px;
+    padding-top: 40px;
+    text-align: flex-start;
+    position: flex;
+    padding-left: 27%;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textdep{
+    display: flex;
     height: 74px;
     text-decoration: none;
     color: white;
     background-color: #276BA2;
-    display: inline-block;
     padding: 10px 10px;
     font-size: 26px;
     text-align: center;
     border-radius: 35px;
 }
+
+.footermail{
+    position: flex;
+    width: 100%;
+    height: 93px;
+    background: linear-gradient(264.31deg, #2E3A44 0%, #0D1116 100%);
+}
+
+#receba{
+    display:flex;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 230;
+    padding-left: 56;
+    padding-top: 20;
+}
+
+.Barramail{
+    display: flex;
+    align-items: center;
+    padding-left: 300;
+}
+
+#divmail{
+    background-color:#D9D9D9;
+    border-radius:20px;
+    width:400px;
+    height: 60;
+    justify-content: flex-end;
+}
+  
+#txtmail{
+    float:left;
+    background-color:transparent;
+    padding-top: 20;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:60px;
+    width:400px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footerinfo{
+    position: flex;
+    width: 100%;
+    height: 409px;  
+    background: #152634;
+    color: white;
+    padding:30px;
+    padding-left: 60px;
+}
+
+
+#footerinfo h2{
+    font-size: 24px;
+}
+
+#footerinfo a{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#infoinst{
+    padding-top: 30;
+    padding-left: 20;
+}
+
+#infodep{
+    
+}
+

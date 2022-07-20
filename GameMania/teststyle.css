@@ -1,91 +1,91 @@
-
-.menu{
-    position: absolute;
+#backbody{
+    display: flex;
     width: 100%;
-    height: 340.5px;
+    height: 2000;
     left: 0px;
-    top: 0px;
-    background: #13283C;
-}
-
-.menubar3{
-    position: absolute;
-    width: 242px;
-    height: 935px;
-    left: 58px;
-    top: 59px;
-    background: #276BA2;
-}
-
-.menubar2{
-    position: absolute;
-    width: 100%;
-    height: 81.5px;
-    left: 0px;
-    top: 259px;
-    background: #276BA2;
-}
-
-.menubar1{
-    display: flex;
-    position: absolute;
-    background: #276BA2;
-    width: 100%;
-    max-height: 60px;
-    left: 0px;
-    top: 0px;
-
-}
-
-.menu .menubanner{
-    display: flex;
-    background: #276BA2;
-}
-
-.menu .menubar1 .sociallinks{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu .menubar1 .userlinks{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.logo img{
-    position: absolute;
-    width: 100%;
-    max-width: 242px;
-    height: 242px;
-    left: 58px;
-    top: 59px;
-}
-
-/* .categoria{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    text-decoration: none;
     justify-content: center;
-} */
-
-.categoria{
-    position: absolute;
-    width: 100%;
-    height: 90px;
-    left: 0px;
-    top: 994px;
-    background: #276BA2;
+    background: linear-gradient(116.09deg, #354967 1.32%, #050505 99.98%, rgba(36, 32, 32, 0.166667) 99.99%, rgba(33, 29, 29, 0) 100%);
 }
 
-.categoria .linkCat{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    color: #fff;
+.title1{
+    padding-top: 40px;
+    text-align: center;
+    position:absolute;
+    
+}
+
+.textproduto{
+    display: flex;
+    width: 550px;
+    height: 74px;
     text-decoration: none;
-    justify-content: space-between;
+    color: white;
+    background-color: #276BA2;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.catalogo1{
+    justify-content: center;
+    display: flex;
+    padding-top: 110px;
+}
+
+.catalogo1 .containerproduto{
+    border: 1px solid #000000;
+    background-color: #3c3e3f;
+    width: 250px;
+    height: 370px;
+    margin-top: 7%;
+    margin-left: 4%;
+    padding: 3px;
+}
+
+.catalogo1 .containerproduto .prod1{
+    color: white;
+    font-size: 13px;
+}
+
+.catalogo1 .containerproduto .prod2{
+    font-family: 'Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 8px;
+    color: #ABA5A5;
+}
+
+.catalogo1 .containerproduto .prod3{
+    font-family: 'Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 4px;
+    color: #0FB600;
+}
+
+.title2{
+    padding-top: 40px;
+    text-align: center;
+    position:absolute;
+    padding-top: 500;
+}
+
+.textproduto2{
+    display: flex;
+    width: 300px;
+    height: 74px;
+    text-decoration: none;
+    color: white;
+    background-color: #276BA2;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 35px;
 }
