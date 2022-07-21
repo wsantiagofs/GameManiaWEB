@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mania</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="login" href="login.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
@@ -14,14 +15,6 @@
     <header>
         <nav class="menubar1">
             <div class="backmenu">
-                <!-- <div class="s" style="display:flex; align-tracks : center ;justify-content: flex-start;">
-                    <a class="s" href="https://www.facebook.com">
-                    <img src="images\icon-facebook.png" alt="Facebook" width="50" height="50"></a>
-                    <a class="s" href="https://www.twitter.com">
-                    <img src="images\icon-twitter.png" alt="Twitter" width="50" height="50"></a>
-                    <a class="s" href="https://www.instagram.com/william.sant/">
-                    <img src="images\icon-instagram.png" alt="Instagram" width="50" height="50"></a>
-                </div> -->
                 <div class="u">
                     <a class="u" href="#area-de-suporte">
                     <img src="images\icon-suporte.png" alt="Suporte" width="50" height="50"></a>
@@ -34,7 +27,7 @@
         </nav>
         <div class="menubar2">
             <div class="logo">
-                <img src="Images\Logo-GameMania.png" alt="Game Mania" style="max-width: 240px">
+                <img src="Images\Logo-GameMania.png" alt="Game Mania" style="max-width: 280px">
             </div>
             <div class="Barrabusca">
                 <div id="divBusca">
@@ -45,8 +38,8 @@
                 </div>
             </div>
             <div class="log-cad">
-                <a id="cadastrob" href="#Cadastro">CADASTRE-SE</a>
-                <a id="loginb" href="#Login">clique aqui para fazer login</a>
+                <a id="cadastrob" href="login.html">CADASTRE-SE</a>
+                <a id="loginb" href="login.html">clique aqui para fazer login</a>
             </div>
         </div>
         <div class="categoria"> <!---                CATEGORIAS                   -->
@@ -153,10 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bannerpromo">
-                <img src="Images\BANNER PROMOÇÃO.svg">
-            </div>
-            <!-- <div class="container2">
+            <div class="container2">
                 <div class="title1">
                     <a div class="textdep"><h2>DEPARTAMENTOS</h2></a>
                 </div>
@@ -170,26 +160,39 @@
                     <img src="Images\departamentos.png" width="200" height="200">
                     <img src="Images\departamentos.png" width="200" height="200">
                 </div>
-        </div> -->
+        </div>
+        <div class="bannerpromo">
+            <img src="Images\BANNER PROMOÇÃO.svg">
+        </div>
     </main>
 </body>
 <footer>
     <div class="footermail">
         <div id="receba"><a>Receba ofertas no seu email</a></div>
-        <!-- <div class="Barramail">
+        <div class="Barramail">
             <div id="divmail">
                 <form action="#" method="post">
                     <input type="text" name="txtmail" id="txtmail" placeholder="Seu nome" required>
-                    <button type="submit"></button>
+                    <!-- <button type="submit"></button> -->
                 </form>
             </div>
             <div id="divmail">
                 <form action="#" method="post">
                     <input type="text" name="txtmail" id="txtmail" placeholder="Seu email" required>
-                    <button type="submit"></button>
+                    <!-- <button type="submit"></button> -->
                 </form>
             </div>
-        </div> -->
+        </div>
+        <div id="redesocial">
+                    <div class="s">
+                    <a class="s" href="https://www.facebook.com">
+                    <img src="images\icon-facebook.png" alt="Facebook" width="50" height="50"></a>
+                    <a class="s" href="https://www.twitter.com">
+                    <img src="images\icon-twitter.png" alt="Twitter" width="50" height="50"></a>
+                    <a class="s" href="https://www.instagram.com/william.sant/">
+                    <img src="images\icon-instagram.png" alt="Instagram" width="50" height="50"></a>
+                </div>
+        </div>
     </div>
     <div class="footerinfo">
         <div id="formaspagamento">
@@ -222,6 +225,7 @@
             (11) 99999-9999<br>
             Email:
             faleconosco@gamemania.com
+            <img src="Images\seguranca.svg" width="350px" height="112px">
         </div>
         <div class="infoclie">
             <h2>Cliente</h2>
@@ -230,11 +234,10 @@
             Meus cupons<br>
             Meus tickets
         </div>
-        <div class="infogame">
-            GAME MANIA COMÉRCIO ELETRÔNICO S/A | Todos os direitos reservados CNPJ: 99.999.999/0009-99
-Avenida Campo Sujo, São Paulo - SP - 08999-999
+        <div id="info2">
+            <div class="infogame">
+                GAME MANIA COMÉRCIO ELETRÔNICO S/A | Todos os direitos reservados CNPJ: 99.999.999/0009-99<br>
+    Avenida Campo Sujo, São Paulo - SP - 08999-999
+            </div>
         </div>
-        <div id="segurancafoo">
-            <h3>Formas de pagamento</h3>
-            <img src="Images\seguranca.svg">
 </footer>
