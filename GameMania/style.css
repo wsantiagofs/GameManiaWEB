@@ -105,10 +105,6 @@
     padding: 1rem;
 }
 
-.catbar{
-    
-}
-
 .categoria a{
     color: white;
     font-size: 24px;
@@ -148,21 +144,22 @@
 }
 
 #bannerbtn{
-   text-decoration: none;
-   text-align: center;
-   color: white;
-   width: 250px;
-   height: 74px;
-   background-color: #276BA2;
-   font-size: 45px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 250px;
+    height: 74px;
+    background-color: #276BA2;
+    font-size: 45px;
 
 }
 
 #bannerdiv{
-   position: flex;
-   width: 100%;
-   height: 2%;
-   background-color: #276BA2;
+    position: flex;
+    width: 100%;
+    height: 3%;
+    background-color: #276BA2;
+
 }
 
 /*                 MAIN DO SITE                    */
@@ -204,10 +201,10 @@
 }
 
 .catalogo .containerproduto{
-    border: 1px solid #000000;
+    border: 1px solid #232525;
     background-color: #3c3e3f;
     width: 250px;
-    height: 370px;
+    height: 390px;
     margin-top: 3%;
     margin-left: 4%;
     padding: 3px;
@@ -216,6 +213,7 @@
 .catalogo .containerproduto .prod1{
     color: white;
     font-size: 13px;
+    text-decoration: none;
 }
 
 .catalogo .containerproduto .prod2{
@@ -226,6 +224,7 @@
     line-height: 20px;
     padding-left: 8px;
     color: #ABA5A5;
+    text-decoration: none;
 }
 
 .catalogo .containerproduto .prod3{
@@ -236,6 +235,7 @@
     line-height: 30px;
     padding-left: 4px;
     color: #0FB600;
+    text-decoration: none;
 }
 
 /*               BANNER E DEPARTAMENTOS                */
