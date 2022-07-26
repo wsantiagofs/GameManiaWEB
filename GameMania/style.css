@@ -184,12 +184,11 @@
 
 .textproduto{
     display: flex;
-    height: 74px;
     text-decoration: none;
     color: white;
     background-color: #276BA2;
     display: inline-block;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 26px;
     text-align: center;
     border-radius: 35px;
@@ -275,7 +274,7 @@
     width: 1000px;
     height: 550px;
     justify-content: center;
-    padding-left: 9%;
+    padding-left: 12%;
     padding-top: 15;
 }
 
