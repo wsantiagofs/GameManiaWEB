@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
+}
+
+
+.backmenu{
+    display: flex;
+    background-color: #276BA2;
+    width: 100%;
+    height: 3.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    filter: drop-shadow(0px 25px 12px rgba(0, 0, 0, 0.25));
+}
+
+.u{
+    padding-right: 3.6rem;
+}
+
+.menubar2{
+    display: flex;
+    background-color: #13283C;
+    height: 256px;
+    width: 100%;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 50px;
+    filter: drop-shadow(0px 15px 4px rgba(0, 0, 0, 0.25));
+    max-width: 240;
+    min-width: 120;
+}
+
+.Barrabusca{
+    padding-top: 6.7rem;
+    padding-left: 15rem;
+    justify-content: center;
+}
+
+#divBusca{
+    background-color:#ffffffb7;
+    border-radius:20px;
+    width:558px;
+    height: 62;
+    justify-content: flex-end;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+  
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-top: 20;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    height:60px;
+    width:490px;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+#divBuscab{
+    padding: 4px;
+    border: none;
+    mix-blend-mode: darken;
+}
+
+.log-cad{
+    padding-top: 100px;
+    padding-left: 5rem;
+    justify-content: flex-end;
+}
+
+#cadastrob{
+    display: flex;
+    width: 250px;
+    height: 74px;
+    text-decoration: none;
+    color: white;
+    background-color: #276BA2;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 35px;
+    padding-top: 20px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+#loginb{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 4px;
+}
+
+.categoria{
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 994px;
+    background-color: #154369;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+
+.categoria a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.categoria .button{
+    background-color: #276BA2;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 330;
+    height: 80px;
+    padding-top: 15;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categoria .button:hover{
+    background-color: #114e80;
+}
+
+#bannermenu{
+    display: inline-block;
+    position: relative;
+}
+
+#bannermenu figcaption {
+    position: absolute;
+    top: 145px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    text-align: center;
+    padding-right: 120px;
+    padding-top: 100px;
+}
+
+#bannerbtn{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 250px;
+    height: 74px;
+    background-color: #276BA2;
+    font-size: 45px;
+
+}
+
+#bannerdiv{
+    position: flex;
+    width: 100%;
+    height: 3%;
+    background-color: #276BA2;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*                 MAIN DO SITE                    */
+
+#backbody{
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+    background-image: linear-gradient(116.09deg, #242f3f 1.32%, #050505 99.98%, rgba(36, 32, 32, 0.166667) 99.99%, rgba(33, 29, 29, 0) 100%);
+}
+
+.container1{
+    width: 100%;
+    position: flex;
+}
+
+.title{
+    padding-top: 40px;
+    text-align: center;
+    position:flex;
+}
+
+.textproduto{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: #276BA2;
+    display: inline-block;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 35px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.catalogo{
+    justify-content: center;
+    display: flex;
+}
+
+.catalogo .containerproduto{
+    border: 1px solid #232525;
+    background-color: #3c3e3f;
+    width: 250px;
+    height: 390px;
+    margin-top: 3%;
+    margin-left: 4%;
+    padding: 3px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.catalogo .containerproduto .prod1{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.catalogo .containerproduto .prod2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 8px;
+    color: #ABA5A5;
+    text-decoration: none;
+}
+
+.catalogo .containerproduto .prod3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 4px;
+    color: #0FB600;
+    text-decoration: none;
+}
+
+/*               BANNER E DEPARTAMENTOS                */
+
+.bannerpromo{
+    position: flex;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-right: 9%;
+}
+
+.title1{
+    display: flex;
+    padding-top: 40px;
+    text-align: flex-start;
+    position: flex;
+    padding-left: 27%;
+    padding-bottom: 50;
+}
+
+.textdep{
+    display: flex;
+    height: 74px;
+    text-decoration: none;
+    color: white;
+    background-color: #276BA2;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.container2{
+    position: absolute;
+    display: inline-block;
+    width: 1000px;
+    height: 550px;
+    justify-content: center;
+    padding-left: 12%;
+    padding-top: 15;
+    
+}
+
+/*                           FOOTER E-MAIL                      */
+
+.footermail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 93px;
+    background: #112129
+}
+
+#receba{
+    display:flex;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 230;
+    padding-left: 56;
+    padding-top: 20;
+}
+
+.Barramail{
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+#divmail{
+    background-color:#D9D9D9;
+    border-radius:20px;
+    width:350px;
+    height: 60;
+    margin-left: 12px;
+    border: none;
+    outline: none;
+}
+
+#txtmail{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:60px;
+    width:350px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+#redesocial{
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+
+
+/*                        FOOTER INFO                         */
+
+.footerinfo{
+    display: flex;
+    position: flex;
+    width: 100%;
+    height: 409px;  
+    background: #152634;
+    color: white;
+    padding:30px;
+    padding-left: 60px;
+}
+
+
+#footerinfo h2{
+    font-size: 24px;
+}
+
+#footerinfo a{
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#infoinst{
+    position: absolute;
+    padding-top: 8%;
+    padding-left: 1%;
+    width: 330px;
+    height: 200px;
+}
+
+#infodep{
+    padding-left: 6%;
+}
+
+#infoaten{
+    padding-left: 8%;
+}
+
+
+#infoclie{
+    display: absolute;
+    position: absolute;
+    padding-left: 5%;
+    width: 250px;
+    height: 179px;
+    padding-top: 8%;
+}
+
+#info2{
+    position: absolute;
+    display: flex;
+    padding-top: 21%;
+    justify-content: center;
+    text-align: center;
+    width: 850px;
+    height: 49px;
+    left: 23%;
+}
+
+/*                   PAGINA DE LOGIN E CADASTRO                  */
+
+.abalogin{
+    display: flex;
+}
+
+#titlelogin{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding-top: 3%;
+    padding-left: 8%;
+    font-size: 15px;
+}
+
+#arealogin{
+    background-color: #276ba2d8;
+    color: white;
+    margin-top: 11%;
+    margin-left: 8%;
+    font-size: 15px;
+    position: absolute;
+    padding: 40px;
+    border-radius: 20px;
+    width: 530px;
+}
+
+.inputlogin{
+    padding: 15px;
+    width: 450px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.inputbtn{
+    background-color: #154369;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+#areacadastro{
+    background-color: #276ba2d8;
+    color: white;
+    margin-top: 11%;
+    margin-left: 55%;
+    font-size: 15px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 530px;
+}
+
+
+
+/* TESTE */
+
+.categoria{
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 994px;
+    background-color: #154369;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+
+.dd_wrap{
+    width: 280px;
+    position: relative;
+}
+
+.dd_wrap ul li{
+    position: relative;
+}
+
+.dd_wrap ul li a{
+    display: block;
+    background: #276BA2;
+    color: white;
+    padding: 20px 25px;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.dd_wrap ul li a:hover
+.dd_wrap ul li a.active{
+    background: #114e80;
+}
+
+
+
+
+
+
+.categoria a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.categoria .button{
+    background-color: #276BA2;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 330;
+    height: 80px;
+    padding-top: 15;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categoria .button:hover{
+    background-color: #114e80;
+}
