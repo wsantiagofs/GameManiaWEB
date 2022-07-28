@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+body{
+    background: #154369;
+}
+
+.drop{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    
+}
+
+.dropdown{
+    margin-right: 50px;
+}
+
+.dropdown:last-child{
+    margin-right: 0;
+}
+
+.dropdown button{
+    border: 0;
+    background: #276BA2;
+    color: white;
+    padding: 16px 28px;
+    width: 250px;
+    height: 74px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+}
+
+.dropdown button:hover, 
+.dropdown button.active{
+    background: #114e80;
+}
+
+.dropdown button .icon,
+.dropdownul li a .icon{
+    font-size: 21px;
+    align-items: center;
+}
+
+.dropdown ul{
+    display: none;
+    width: 250px;
+    background: #276BA2;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 5;
+}
+
+.dropdown ul li a{
+    display: flex;
+    padding: 16px 20px;
+    height: 50px;
+    color: white;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.dropdown ul li a:hover{
+    background: #114e80;
+    color: #b3aaaa;
+}
+
+.dropdown.drop_desktop .icon{
+    display: none;
+}
+
+.dropdown.drop_desktop ul li a{
+    justify-content: center;
+}
+
+.dropdown.drop_mobile button,
+.dropdown.drop_mobile ul{
+    width: 75px;
+}
+
+.dropdown.drop_mobile .text{
+    display: none;
+}
+
+.dropdown.drop_mobile ul li a{
+    padding: 16px 25px;
+    font-size: 25px;
+}
+
+.dropdown.drop_mobile .icon{
+    margin: 0;
+    display: inline-block;
+}
+
+.dropdown button.active + ul{
+    display: block;
+}

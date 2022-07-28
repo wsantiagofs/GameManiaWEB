@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -45,16 +46,81 @@
                 <a id="loginb" href="login.html">clique aqui para fazer login</a>
             </div>
         </div>
-        <div class="categoria"> <!---                CATEGORIAS                   -->
-            <a class="button z" href="#compre-por-departamento">
-                <img class="catbar" src="Images\menu-bar.png" style="width: 25;">
-                COMPRE POR <br>DEPARTAMENTO
-            </a>
+        
+        <div class="categoria">
+            <div class="dropdown drop_desktop_icon">
+                <button><span class="icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </span>
+            <span class="text">Compre por Departamento</span></button>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="hardware-chip-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                Hardware
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="desktop-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                Computadores
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="game-controller-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                Games
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="headset-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                Periféricos
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                Smartphones
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                Smart Home
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <a class="button" href="#lancamentos">
                 LANÇAMENTOS
             </a>
-            <a class="button" href="#hardware">
-                HARDWARE
+            <a class="button" href="#destaques">
+                DESTAQUES
             </a>
             <a class="button" href="#perifericos">
                 PERIFÉRICOS
@@ -62,6 +128,7 @@
             <a class="button" href="#pc-gamer">
                 PC GAMER
             </a>
+            <script type="text/javascript" src="scripts.js"></script>
         </div>
         <div class="bannerp">
             <figure id="bannermenu">
@@ -197,50 +264,47 @@
                 </div>
         </div>
     </div>
-    <div class="footerinfo">
-        <div id="formaspagamento">
-            <h3>Formas de pagamento</h3>
-            <img src="Images\formas-pagamento.svg">
-        </div>
-        <div id="infoinst">
-            <h2>Institucional</h2>
-            Quem Somos<br>
-            Sobre Nós<br>
-            Políticas de privacidade<br>
-            Trabalhe conosco<br>
-            Missão, Visão e Valores
-        </div>
-        <div id="infodep">
-            <h2>Departamentos</h2>
-            Hardware<br>
-            Placa de Vídeo<br>
-            Computadores<br>
-            Monitores<br>
-            Mouse e Teclado<br>
-            Smartphones<br>
-            Consoles e Games<br>
-            Todos os departamentos >>
-        </div>
-        <div id="infoaten">
-            <h2>Atendimento</h2>
-            Horário de atendimento<br>
-            7:00 ás 22:00<br>
-            (11) 99999-9999<br>
-            Email:
-            faleconosco@gamemania.com
-            <img src="Images\seguranca.svg" width="350px" height="112px">
-        </div>
-        <div class="infoclie">
-            <h2>Cliente</h2>
-            Minha conta<br>
-            Meus pedidos<br>
-            Meus cupons<br>
-            Meus tickets
-        </div>
-        <div id="info2">
-            <div class="infogame">
-                GAME MANIA COMÉRCIO ELETRÔNICO S/A | Todos os direitos reservados CNPJ: 99.999.999/0009-99<br>
-    Avenida Campo Belo, São Paulo - SP - 08999-999
-            </div>
-        </div>
+    <div class="footerdiv">
+        <ul id="pagdiv">
+            <li><h3>Formas de Pagamento</h3></li>
+            <li><img src="Images\formas-pagamento.svg">
+                <li><h3>Institucional</h3></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Políticas de privacidade</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+                <li><a href="#">Missão, Visão e Valores</a></li>
+        </ul>
+        <ul class="depdiv">
+            <li><h3>Departamentos</h3></li>
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Placas de Vídeo</a></li>
+            <li><a href="#">Computadores</a></li>
+            <li><a href="#">Monitores</a></li>
+            <li><a href="#">Mouse e Teclado</a></li>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Consoles e Games</a></li>
+            <li><a href="#">Ver Mais >></a></li>
+        </ul>
+        <ul class="cttdiv">
+            <li><h3>Atendimento</h3></li>
+            <li><a>Horário de atendimento</a></li>
+            <li><a>7:00 ás 22:00</a></li>
+            <li><a>(11) 99999-9999</a></li>
+            <li><a>Email:</a></li>
+            <li><a>faleconosco@gamemania.com</a></li>
+            <li><img src="Images\seguranca.svg" width="350px" height="112px"></li>
+        </ul>
+        <ul class="clntdiv">
+            <li><h3>Cliente</h3></li>
+            <li><a href="#">Minha conta</a></li>
+            <li><a href="#">Meus pedidos</a></li>
+            <li><a href="#">Meus Cupons</a></li>
+            <li><a href="#">Meus ticket</a></li>
+        </ul>
+        <ul class="gamediv">
+            <li><a>GAME MANIA COMÉRCIO ELETRÔNICO S/A | Todos os direitos reservados CNPJ: 99.999.999/0009-99<br>
+                Avenida Campo Belo, São Paulo - SP - 08999-999</a></li>
+        </ul>
+    </div>
 </footer>
