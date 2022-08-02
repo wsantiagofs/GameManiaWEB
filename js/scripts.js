@@ -13,3 +13,14 @@ btn_2.addEventListener("click", function(){
 btn_3.addEventListener("click", function(){
     this.classList.toggle("active");
 })
+
+// Slider do produto
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });

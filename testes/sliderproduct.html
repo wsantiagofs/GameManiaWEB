@@ -11,11 +11,310 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <link rel="stylesheet" type="text/css" href="sliderproduct.css">
-    <link rel="stylesheet" type="text/css" href="lightslider.css">
-    <script type="text/javascript" src="js/Jquery.js"></script>
-    <script type="text/javascript" src="js/lightslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/lightslider.css">
+    <script type="text/javascript" src="../js/Jquery.js"></script>
+    <script type="text/javascript" src="../js/lightslider.js"></script>
 </head>
+<nav class="menubar1">
+	<div class="backmenu">
+		<div class="u">
+			<a class="u" href="#area-de-suporte">
+			<img src="images\icon-suporte.png" alt="Suporte" width="50" height="50"></a>
+			<a class="u" href="#area-do-cliente">
+			<img src="images\icon-perfil.png" alt="Perfil" width="50" height="50"></a>
+			<a class="u" href="#carrinho">
+			<img src="images\icon-carrinho.png" alt="Carrinho" width="50" height="50"></a>
+		</div>
+	</div>
+</nav>
+<div class="menubar2">
+	<div class="logo">
+		<a href="index.html"><img src="Images\Logo-GameMania.png" alt="Game Mania Home" style="max-width: 280px"></a>
+	</div>
+	<div class="Barrabusca">
+		<div id="divBusca">
+			<form action="#" method="post">
+				<input type="text" name="txtBusca" id="txtBusca" placeholder="Busque aqui" required>
+				<button type="submit" id="divBuscab"><img src="Images\searchbarlupa.png" width="60" height="55"></button>
+			</form>
+		</div>
+	</div>
+	<div class="log-cad">
+		<a id="cadastrob" href="login.html">CADASTRE-SE</a>
+		<a id="loginb" href="login.html">clique aqui para fazer login</a>
+	</div>
+</div>
+<div class="categoria">
+	<div class="dropdown drop_desktop_icon">
+		<button><span class="icon">
+			<ion-icon name="menu-outline"></ion-icon>
+		</span>
+	<span class="text">Compre por Departamento</span></button>
+		<ul>
+			<li>
+				<a href="#">
+					<span class="icon">
+						<ion-icon name="hardware-chip-outline"></ion-icon>
+					</span>
+					<span class="text">
+						Hardware
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon">
+						<ion-icon name="desktop-outline"></ion-icon>
+					</span>
+					<span class="text">
+						Computadores
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon">
+						<ion-icon name="game-controller-outline"></ion-icon>
+					</span>
+					<span class="text">
+						Games
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon">
+						<ion-icon name="headset-outline"></ion-icon>
+					</span>
+					<span class="text">
+						Periféricos
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon">
+						<ion-icon name="phone-portrait-outline"></ion-icon>
+					</span>
+					<span class="text">
+						Smartphones
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="icon">
+						<ion-icon name="home-outline"></ion-icon>
+					</span>
+					<span class="text">
+						Smart Home
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<a class="button" href="#lancamentos">
+		LANÇAMENTOS</a>
+	<a class="button" href="#destaques">
+		DESTAQUES</a>
+	<a class="button" href="#perifericos">
+		PERIFÉRICOS</a>
+	<a class="button" href="#pc-gamer">
+		PC GAMER</a>
+	<script type="text/javascript" src="js\scripts.js"></script>
+</div>
+<div class="bannerp">
+	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+		  <div class="carousel-item active" data-bs-interval="10000">
+			<img src="Images\banner-carrossel_1.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item" data-bs-interval="5000">
+			<img src="Images\banner-carrossel_2.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="Images\banner-carrossel_3.jpg" class="d-block w-100" alt="...">
+		  </div>
+		</div>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+</div>
+</header>
+<main>
+ <div id="backbody">
+            <div id="bannerdiv"></div>
+            <div class="container1">
+                <div class="title">
+                    <a div class="textproduto"><h2>PROMOÇÕES DE JULHO</h2></a>
+                    <a id="textmore" href="#">Ver Todos ></a>
+                </div>
+                <section class="slider">
+                    <ul id="autoWidth" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-b">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-c">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-d">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-d">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-d">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-d">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-d">
+                            <div class="tbox">
+                                <div class="slide-img">
+                                    <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                        <a href="#">Placa De Vídeo Gigabyte NVIDIA GeForce RTX 3050 EAGLE OC 8G, LHR, 8GB, GDDR6, DLSS</a>
+                                        <span id="x-price">de <s>R$ 4,199.00</s> por</span>
+                                        <span id="n-price">R$ 2,499,00 á vista</span>
+                                        <span id="x-price">ou 12x de 248,25 sem juros</span>
+                                    </div>
+                                </div>
+                                <div class="btn-comprar">
+                                    <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <script>$(document).ready(function() {
+                    $('#autoWidth').lightSlider({
+                        autoWidth:true,
+                        loop:true,
+                        onSliderLoad: function() {
+                            $('#autoWidth').removeClass('cS-hidden');
+                        } 
+                    });  
+                  });</script>
+            </div>
+        </div>
+    </main>
+</body>
+
 <body>
 	<section class="slider">
 		<ul id="autoWidth" class="cs-hidden">
@@ -184,5 +483,6 @@
 		</ul>
 		</section>	
 <!--script-link----------->
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="JS\script.js"></script>
 </body>
+</html>
