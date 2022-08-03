@@ -6,25 +6,33 @@
     font-family: 'Inter', sans-serif;;
 }
 
+/* MENU DE ICONES */
 
 .backmenu{
     display: flex;
     background-color: #276BA2;
     width: 100%;
     height: 3.5rem;
-    justify-content: flex-end;
-    align-items: center;
+    /* justify-content: flex-end; */
     filter: drop-shadow(0px 25px 12px rgba(0, 0, 0, 0.25));
+    justify-content: space-between;
 }
 
-.u{
-    padding-right: 3rem;
+.icon-user a{
+    color: black;
+    font-size: 50px;
+    padding-right: 4rem;
+}
+
+.icons1{
+    padding-left: 4rem;
 }
 
 .menubar2{
     display: flex;
     background-color: #13283C;
-    height: 256px;
+    max-height: 256px;
+    min-height: 180px;
     width: 100%;
     justify-content: space-between;
 }
@@ -33,66 +41,55 @@
     padding-top: 10px;
     padding-left: 10px;
     filter: drop-shadow(0px 15px 4px rgba(0, 0, 0, 0.25));
-    max-width: 240;
-    min-width: 120;
+    max-width: 18rem;
+    min-width: 9rem;
 }
 
-.Barrabusca{
-    display: flex;
-    padding-top: 6.7rem;
-
-    justify-content: center;
+.logo img{
+    width: 100%;
 }
 
-#divBusca{
+/* BARRA DE BUSCA */
+
+.form-control{
     background-color:#ffffffb7;
-    border-radius:20px;
-    width:558px;
-    height: 62;
-    justify-content: flex-end;
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
-}
-  
-#txtBusca{
-    float:left;
-    background-color:transparent;
-    padding-top: 20;
-    padding-left:5px;
-    font-style:italic;
-    font-size:18px;
-    height:60px;
-    width:490px;
-    padding: 20px;
-    border: none;
-    outline: none;
 }
 
-#divBuscab{
-    padding: 4px;
-    border: none;
-    mix-blend-mode: darken;
-    cursor: pointer;
+.d-flex{
+    width:30rem;
+    min-width:20rem;
+    margin-top: 6.7rem;
+    height: 60px;
+    border-radius: 50px;
+    background-color:transparent;
 }
+
+.btn-search{
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    background-color:#ffffffb7;
+}
+
+/* BOTÃO DE LOGIN/CADASTRO */
 
 .log-cad{
-    padding-top: 100px;
-    padding-right: 5.5em;
+    margin-top: 100px;
+    margin-right: 5.5rem;
 }
 
-#cadastrob{
-    display: flex;
-    width: 250px;
-    height: 74px;
-    text-decoration: none;
-    color: white;
-    background-color: #276BA2;
-    display: inline-block;
-    padding: 10px 10px;
-    font-size: 26px;
-    text-align: center;
+.btn-primary{
+    height: 65px;
+    background: #276BA2;
+    font-size: 1.6rem;
     border-radius: 35px;
-    padding-top: 20px;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 20px;
+}
+
+.btn-primary:hover{
+    background-color: #114e80;
 }
 
 #loginb{
@@ -100,8 +97,8 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
-    padding-left: 20px;
-    padding-top: 4px;
+    margin-left: 20px;
+    margin-top: 4px;
     cursor: pointer;
 }
 
@@ -133,12 +130,9 @@
     border: 0;
     background: #276BA2;
     color: white;
-    padding: 16px 28px;
     width: 250px;
     height: 80px;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: 0.5s ease;
@@ -226,7 +220,7 @@
     display: inline-block;
     color: white;
     text-align: center;
-    width: 330;
+    width: 100%;
     height: 80px;
     padding-top: 15;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
@@ -241,35 +235,6 @@
 
 /*                    ---BANNER---                  */
 
-#bannermenu{
-    display: inline-block;
-    position: relative;
-}
-
-#bannermenu figcaption {
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    font-size: 30px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    text-align: center;
-    padding-right: 120px;
-    padding-top: 100px;
-}
-
-#bannerbtn{
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    width: 250px;
-    height: 74px;
-    background-color: #276BA2;
-    font-size: 35px;
-    border-radius: 15px;
-    padding: 5px;
-}
-
 #bannerdiv{
     position: flex;
     width: 100%;
@@ -278,55 +243,31 @@
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*                 MAIN DO SITE                    */
+/*                    ---MAIN SITE---                  */
 
 #backbody{
     width: 100%;
     height: auto;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     background-image: linear-gradient(116.09deg, #242f3f 1.32%, #050505 99.98%, rgba(36, 32, 32, 0.166667) 99.99%, rgba(33, 29, 29, 0) 100%);
 }
 
-.container1{
-    width: 100%;
-    position: flex;
-}
+/*                    ---CONTAINER PRODUTO---                  */
 
 .title{
     padding-top: 40px;
+    padding-bottom: 30px;
     text-align: center;
     position:flex;
-}
-
-#textmore{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 8em;
-}
-
-.textproduto{
-    display: flex;
-    text-decoration: none;
-    color: white;
-    background-color: #276BA2;
-    display: inline-block;
-    padding: 12px;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .catalogo{
     justify-content: center;
     display: flex;
-    
 }
 
 .item-a{
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 .tbox{
@@ -335,6 +276,341 @@
     overflow: hidden;
     margin-left: 10%;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slide-img{
+    height: 270px;
+    position: relative;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    text-decoration: none;
+    background-color: #114e80;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.btn-comprar{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.type{
+    display:flex;
+    flex-direction: column;
+}
+
+.type a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.81rem;
+}
+
+.type span{
+    color: #ABA5A5;
+    font-size: 0.9rem;
+}
+
+#n-price{
+    color: #0FB600;
+    font-size: 1.3rem;
+}
+
+.buy-btn{
+    text-decoration: none;
+    background: #063d69;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.buy-btn ion-icon{
+    font-size: 20px;
+}
+
+.box1{
+    border-radius: 5px;
+    width: 15.25em;
+    height: 24em;
+    background: #114e80;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.mainbox1.l1{
+    color: white;
+    font-size: 0.81em;
+}
+
+.mainbox1.l2{
+    color: #ABA5A5;
+    font-size: 0.9em;
+}
+
+.mainbox1.l3{
+    color: #0FB600;
+    font-size: 1.3em;
+}
+
+
+/*                    ---BANNER E DEPARTAMENTOS---                  */
+
+
+.title1{
+    display: flex;
+    padding-top: 40px;
+    text-align: flex-start;
+    position: flex;
+    padding-left: 27%;
+    padding-bottom: 50;
+}
+
+.textdep{
+    display: flex;
+    height: 74px;
+    text-decoration: none;
+    color: white;
+    background-color: #276BA2;
+    padding: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.container2{
+    display: flex;
+    padding-left: 12%;
+    padding-top: 15;
+    justify-content: center;
+}
+
+.imgdep{
+    width: 1000px;
+    height: 500px;
+}
+
+.bannerpromo{
+    position: flex;
+    display: flex;
+    padding-right: 9%;
+    margin-top: -120px;
+}
+
+/*                           FOOTER E-MAIL                      */
+
+.footermail{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 93px;
+    background: #112129
+}
+
+#receba{
+    display:flex;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 230;
+    padding-right: 50;
+    padding-top: 20;
+}
+
+.input-group{
+    align-items: center;
+    width: 65%;
+}
+
+.input-group button{
+    height: 40;
+    padding: 5px 20px;
+    font-size: 30px;
+    border-radius: 13px;
+    align-items: center;
+    border: none;
+    margin-left: 60px;
+    color: white;
+    background: #276BA2;
+    height: 60;
+}
+
+.input-group button:hover{
+    background-color: #114e80;
+}
+
+.input-group-text{
+    background-color:#ffffffb7;
+}
+
+/*                        FOOTER INFO                         */
+
+.footerdiv{
+    display: flex;
+    width: 100%;
+    height: 409px;  
+    background: #152634;
+    color: white;
+    padding:30px;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.footerdiv ul li h3{
+    font-size: 24px;
+}
+
+.footerdiv ul li a{
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 26px;
+}
+
+.gamediv{
+    position: absolute;
+    margin-top: 293px;
+    text-align: center;
+}
+
+
+/*                   PAGINA DE LOGIN E CADASTRO                  */
+
+.abalogin{
+    display: flex;
+}
+
+#titlelogin{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding-top: 3%;
+    padding-left: 8%;
+    font-size: 15px;
+    position: absolute;
+}
+
+#arealogin{
+    background-color: #276ba2d8;
+    color: white;
+    /* margin-top: 15%;
+    margin-left: 8%;
+    display: inline-block; */
+    font-size: 15px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 530px;
+}
+
+#areacadastro{
+    background-color: #276ba2d8;
+    color: white;
+    /* margin-top: 11%;
+    margin-left: 55%; */
+    font-size: 15px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 530px;
+}
+
+.box-login-cadastro,
+.boxlogin,
+.boxcad{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+.boxlogin{
+    padding-left: 30;
+}
+
+.boxcad{
+    padding-right: 30;
+}
+
+.form-login{
+    height: 55px;
+    margin-top: 20px;
+}
+
+.inputbtn{
+    background-color: #154369;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.inputbtn:hover{
+    background-color: #043f70;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.form-check{
+    font-size: 13px;
+}
+
+
+/*             Código de responsividade            */
+
+@media screen and (max-width: 1100px) {
+    .logo{
+        background: red;
+    }
+    
+    .menubar1{
+        height: 4px;
+    }
+
+    .bannerpromo{
+        display: none;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+/*                    ---TESTE---                  */
+
+
+/* .tbox{
+    width: 240px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: 10%;
 }
 
 .slide-img{
@@ -402,13 +678,6 @@
     font-size: 20px;
 }
 
-/* .cS-hidden {
-    height: 1px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    overflow: hidden;
-} */
-
 .box1{
     border-radius: 5px;
     width: 15.25em;
@@ -434,191 +703,17 @@
     font-size: 1.3em;
 }
 
-/*               BANNER E DEPARTAMENTOS                */
-
-.bannerpromo{
-    position: flex;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 50px;
-    padding-right: 9%;
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
 }
 
-.title1{
+.slider{
+    width: 100%;
+    height: 100%;
     display: flex;
-    padding-top: 40px;
-    text-align: flex-start;
-    position: flex;
-    padding-left: 27%;
-    padding-bottom: 50;
-}
-
-#textmoredep{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    padding-top: 50px;
-    padding-left: 90;
-}
-
-.textdep{
-    display: flex;
-    height: 74px;
-    text-decoration: none;
-    color: white;
-    background-color: #276BA2;
-    padding: 10px 10px;
-    font-size: 26px;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.container2{
-    position: absolute;
-    display: inline-block;
-    width: 1000px;
-    height: 550px;
     justify-content: center;
-    padding-left: 12%;
-    padding-top: 15;
-}
-
-/*                           FOOTER E-MAIL                      */
-
-.footermail{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 93px;
-    background: #112129
-}
-
-#receba{
-    display:flex;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 230;
-    padding-left: 56;
-    padding-top: 20;
-}
-
-.Barramail{
-    display: flex;
     align-items: center;
-    padding-left: 80px;
-}
-
-#divmail{
-    background-color:#D9D9D9;
-    border-radius:20px;
-    margin-left: 12px;
-}
-
-#txtmail{
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-style:italic;
-    font-size:18px;
-    border:none;
-    outline: none;
-    height:60px;
-    width:19em;
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
-}
-
-#redesocial{
-    display: flex;
-    align-items: center;
-    padding-right: 5%;
-}
-
-
-/*                        FOOTER INFO                         */
-
-.footerdiv{
-    display: flex;
-    width: 100%;
-    height: 409px;  
-    background: #152634;
-    color: white;
-    padding:30px;
-    text-decoration: none;
-    justify-content: space-around;
-}
-
-.footerdiv ul li h3{
-    font-size: 24px;
-}
-
-.footerdiv ul li a{
-    font-size: 18px;
-    color: #FFFFFF;
-    text-decoration: none;
-    line-height: 26px;
-}
-
-.gamediv{
-    position: absolute;
-    margin-top: 293px;
-    text-align: center;
-}
-
-
-/*                   PAGINA DE LOGIN E CADASTRO                  */
-
-.abalogin{
-    display: flex;
-}
-
-#titlelogin{
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    padding-top: 3%;
-    padding-left: 8%;
-    font-size: 15px;
-}
-
-#arealogin{
-    background-color: #276ba2d8;
-    color: white;
-    margin-top: 11%;
-    margin-left: 8%;
-    font-size: 15px;
-    position: absolute;
-    padding: 40px;
-    border-radius: 20px;
-    width: 530px;
-}
-
-.inputlogin{
-    padding: 15px;
-    width: 450px;
-    border: none;
-    outline: none;
-    font-size: 15px;
-}
-
-.inputbtn{
-    background-color: #154369;
-    padding: 15px;
-    border: none;
-    width: 100%;
-    font-size: 15px;
-}
-
-#areacadastro{
-    background-color: #276ba2d8;
-    color: white;
-    margin-top: 11%;
-    margin-left: 55%;
-    font-size: 15px;
-    padding: 40px;
-    border-radius: 20px;
-    width: 530px;
-}
-
-/* TESTE */
+} */

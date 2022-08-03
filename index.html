@@ -23,30 +23,32 @@
     <header>
         <nav class="menubar1">
             <div class="backmenu">
-                <div class="u">
-                    <a class="u" href="#area-de-suporte">
-                    <img src="images\icon-suporte.png" alt="Suporte"></a>
-                    <a class="u" href="#area-do-cliente">
-                    <img src="images\icon-perfil.png" alt="Perfil"></a>
-                    <a class="u" href="#carrinho">
-                    <img src="images\icon-carrinho.png" alt="Carrinho"></a>
+                <div class="icon-user icons1">
+                <div id="icons">
+                    <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/william.sant/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+                <div class="icons">
+                    <div class="icon-user icons2">
+                        <a href="#"><ion-icon name="headset"></ion-icon></a>
+                        <a href="#"><ion-icon name="person-circle"></ion-icon></a>
+                        <a href="#"><ion-icon name="cart"></ion-icon></a>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="menubar2">
             <div class="logo">
-                <a href="index.html"><img src="Images\Logo-GameMania.png" alt="Game Mania Home" style="max-width: 280px"></a>
+                <a href="index.html"><img src="Images\Logo-GameMania.png" alt="Game Mania Home"></a>
             </div>
-            <div class="Barrabusca">
-                <div id="divBusca">
-                    <form action="#" method="post">
-                        <input type="text" name="txtBusca" id="txtBusca" placeholder="Busque aqui" required>
-                        <button type="submit" id="divBuscab"><img src="Images\searchbarlupa.png"></button>
-                    </form>
-                </div>
-            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn-search" type="submit"><ion-icon name="search"></ion-icon></button>
+              </form>
             <div class="log-cad">
-                <a id="cadastrob" href="login.html">CADASTRE-SE</a>
+                <a href="login.html"><button type="button" class="btn btn-primary btn-lg">CADASTRE-SE</button></a>
                 <a id="loginb" href="login.html">clique aqui para fazer login</a>
             </div>
         </div>
@@ -155,8 +157,7 @@
             <div id="bannerdiv"></div>
             <div class="container1">
                 <div class="title">
-                    <a div class="textproduto"><h2>PROMOÇÕES DE JULHO</h2></a>
-                    <a id="textmore" href="#">Ver Todos ></a>
+                    <a href="#"><button type="button" class="btn btn-primary btn-lg">PROMOÇÕES DE AGOSTO</button></a>
                 </div>
                 <div class="catalogo">
                     <li class="item-a">
@@ -234,8 +235,7 @@
             </div>
             <div class="container">
                 <div class="title">
-                    <a div class="textproduto"><h2>DESTAQUES</h2></a>
-                    <a id="textmore" href="#">Ver Todos ></a>
+                    <a href="#"><button type="button" class="btn btn-primary btn-lg">DESTAQUES</button></a>
                 </div>
                 <div class="catalogo">
                     <li class="item-a">
@@ -313,8 +313,7 @@
                 </div>
             </div>
             <div class="title1">
-                <a div class="textdep"><h2>DEPARTAMENTOS</h2></a>
-                <!-- <a id="textmoredep" href="#">Ver Todos ></a> -->
+                <a href="#"><button type="button" class="btn btn-primary btn-lg">DEPARTAMENTOS</button></a>
             </div>
             <div class="container2">
                 <div class="imgdep">
@@ -336,31 +335,14 @@
 </body>
 <footer>
     <div class="footermail">
-        <div id="receba"><a>Receba ofertas no seu email</a></div>
-        <div class="Barramail">
-            <div id="divmail">
-                <form action="#" method="post">
-                    <input type="text" name="txtmail" id="txtmail" placeholder="Seu nome" required>
-                    <!-- <button type="submit"></button> -->
-                </form>
-            </div>
-            <div id="divmail">
-                <form action="#" method="post">
-                    <input type="text" name="txtmail" id="txtmail" placeholder="Seu email" required>
-                    <!-- <button type="submit"></button> -->
-                </form>
-            </div>
-        </div>
-        <div id="redesocial">
-                    <div class="s">
-                    <a class="s" href="https://www.facebook.com">
-                    <img src="images\icon-facebook.png" alt="Facebook" width="50" height="50"></a>
-                    <a class="s" href="https://www.twitter.com">
-                    <img src="images\icon-twitter.png" alt="Twitter" width="50" height="50"></a>
-                    <a class="s" href="https://www.instagram.com/william.sant/">
-                    <img src="images\icon-instagram.png" alt="Instagram" width="50" height="50"></a>
-                </div>
-        </div>
+        <div id="receba"><a>Receba ofertas em seu email</a></div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <a href="#"><button>CADASTRAR</button></a>
+        </div>          
     </div>
     <div class="footerdiv">
         <ul id="pagdiv">

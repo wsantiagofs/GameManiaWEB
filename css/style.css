@@ -6,24 +6,26 @@
     font-family: 'Inter', sans-serif;;
 }
 
+/* MENU DE ICONES */
 
 .backmenu{
     display: flex;
     background-color: #276BA2;
     width: 100%;
     height: 3.5rem;
-    justify-content: flex-end;
-    align-items: center;
+    /* justify-content: flex-end; */
     filter: drop-shadow(0px 25px 12px rgba(0, 0, 0, 0.25));
+    justify-content: space-between;
 }
 
-.backmenu img{
-    width: 50px;
-    height: 50px;
+.icon-user a{
+    color: black;
+    font-size: 50px;
+    padding-right: 4rem;
 }
 
-.u{
-    padding-right: 3rem;
+.icons1{
+    padding-left: 4rem;
 }
 
 .menubar2{
@@ -47,65 +49,47 @@
     width: 100%;
 }
 
-.Barrabusca{
-    display: flex;
-    padding-top: 6.7rem;
-    justify-content: center;
-}
+/* BARRA DE BUSCA */
 
-#divBusca{
+.form-control{
     background-color:#ffffffb7;
-    border-radius:1.25rem;
-    height: 62;
-    justify-content: flex-end;
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
-#divBusca img{
-    width: 3.75rem;
-    height: 3.438rem;
-}
-
-#txtBusca{
-    float:left;
-    background-color:transparent;
-    font-size:1.25rem;
-    max-height:60px;
-    min-height:40px;
-    height:60px;
-    max-width:30rem;
+.d-flex{
+    width:30rem;
     min-width:20rem;
-    padding: 20px;
-    border: none;
-    outline: none;
+    margin-top: 6.7rem;
+    height: 60px;
+    border-radius: 50px;
+    background-color:transparent;
 }
 
-#divBuscab{
-    margin: 4px;
+.btn-search{
+    width: 70px;
+    border-radius: 5px;
     border: none;
-    mix-blend-mode: darken;
-    cursor: pointer;
+    font-size: 30px;
+    background-color:#ffffffb7;
 }
+
+/* BOTÃO DE LOGIN/CADASTRO */
 
 .log-cad{
     margin-top: 100px;
     margin-right: 5.5rem;
 }
 
-#cadastrob{
-    display: flex;
-    width: 16rem;
-    height: 75px;
-    text-decoration: none;
-    color: white;
-    background-color: #276BA2;
-    display: inline-block;
-    padding: 10px 10px;
+.btn-primary{
+    height: 65px;
+    background: #276BA2;
     font-size: 1.6rem;
-    text-align: center;
     border-radius: 35px;
-    padding-top: 20px;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 20px;
+}
+
+.btn-primary:hover{
+    background-color: #114e80;
 }
 
 #loginb{
@@ -259,55 +243,31 @@
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*                 MAIN DO SITE                    */
+/*                    ---MAIN SITE---                  */
 
 #backbody{
     width: 100%;
     height: auto;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     background-image: linear-gradient(116.09deg, #242f3f 1.32%, #050505 99.98%, rgba(36, 32, 32, 0.166667) 99.99%, rgba(33, 29, 29, 0) 100%);
 }
 
-.container1{
-    width: 100%;
-    position: flex;
-}
+/*                    ---CONTAINER PRODUTO---                  */
 
 .title{
     padding-top: 40px;
+    padding-bottom: 30px;
     text-align: center;
     position:flex;
-}
-
-#textmore{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 8em;
-}
-
-.textproduto{
-    display: flex;
-    text-decoration: none;
-    color: white;
-    background-color: #276BA2;
-    display: inline-block;
-    padding: 12px;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .catalogo{
     justify-content: center;
     display: flex;
-    
 }
 
 .item-a{
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 .tbox{
@@ -346,7 +306,6 @@
     display: flex;
     text-align: center;
 }
-
 
 .type{
     display:flex;
@@ -408,7 +367,9 @@
     font-size: 1.3em;
 }
 
-/*               BANNER E DEPARTAMENTOS                */
+
+/*                    ---BANNER E DEPARTAMENTOS---                  */
+
 
 .title1{
     display: flex;
@@ -417,14 +378,6 @@
     position: flex;
     padding-left: 27%;
     padding-bottom: 50;
-}
-
-#textmoredep{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    padding-top: 50px;
-    padding-left: 90;
 }
 
 .textdep{
@@ -462,7 +415,7 @@
 
 .footermail{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 93px;
     background: #112129
@@ -475,41 +428,35 @@
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 230;
-    padding-left: 56;
+    padding-right: 50;
     padding-top: 20;
 }
 
-.Barramail{
-    display: flex;
+.input-group{
     align-items: center;
-    padding-left: 80px;
+    width: 65%;
 }
 
-#divmail{
-    background-color:#D9D9D9;
-    border-radius:20px;
-    margin-left: 12px;
-}
-
-#txtmail{
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-style:italic;
-    font-size:18px;
-    border:none;
-    outline: none;
-    height:60px;
-    width:19em;
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
-}
-
-#redesocial{
-    display: flex;
+.input-group button{
+    height: 40;
+    padding: 5px 20px;
+    font-size: 30px;
+    border-radius: 13px;
     align-items: center;
-    padding-right: 5%;
+    border: none;
+    margin-left: 60px;
+    color: white;
+    background: #276BA2;
+    height: 60;
 }
 
+.input-group button:hover{
+    background-color: #114e80;
+}
+
+.input-group-text{
+    background-color:#ffffffb7;
+}
 
 /*                        FOOTER INFO                         */
 
@@ -555,26 +502,52 @@
     padding-top: 3%;
     padding-left: 8%;
     font-size: 15px;
+    position: absolute;
 }
 
 #arealogin{
     background-color: #276ba2d8;
     color: white;
-    margin-top: 11%;
+    /* margin-top: 15%;
     margin-left: 8%;
+    display: inline-block; */
     font-size: 15px;
-    position: absolute;
     padding: 40px;
     border-radius: 20px;
     width: 530px;
 }
 
-.inputlogin{
-    padding: 15px;
-    width: 450px;
-    border: none;
-    outline: none;
+#areacadastro{
+    background-color: #276ba2d8;
+    color: white;
+    /* margin-top: 11%;
+    margin-left: 55%; */
     font-size: 15px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 530px;
+}
+
+.box-login-cadastro,
+.boxlogin,
+.boxcad{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+.boxlogin{
+    padding-left: 30;
+}
+
+.boxcad{
+    padding-right: 30;
+}
+
+.form-login{
+    height: 55px;
+    margin-top: 20px;
 }
 
 .inputbtn{
@@ -582,19 +555,24 @@
     padding: 15px;
     border: none;
     width: 100%;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 20px;
 }
 
-#areacadastro{
-    background-color: #276ba2d8;
-    color: white;
-    margin-top: 11%;
-    margin-left: 55%;
-    font-size: 15px;
-    padding: 40px;
-    border-radius: 20px;
-    width: 530px;
+.inputbtn:hover{
+    background-color: #043f70;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
 }
+
+.form-check{
+    font-size: 13px;
+}
+
 
 /*             Código de responsividade            */
 
@@ -618,34 +596,15 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    
-    /* .categoria a{
-        color: white;
-        font-size: 16px;
-        text-decoration: none;
-        font-weight: 900;
-    }
-    
-    .categoria .button{
-        background-color: #276BA2;
-        display: inline-block;
-        color: white;
-        text-align: center;
-        width: 100%;
-        height: 60px;
-        padding-top: 15;
-        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
-        letter-spacing: 3px;
-        transition: 0.5s ease;
-        cursor: pointer;
-    } */
 }
 
 
 
 
 
-/* TESTE */
+
+/*                    ---TESTE---                  */
+
 
 /* .tbox{
     width: 240px;
