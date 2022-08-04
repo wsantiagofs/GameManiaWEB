@@ -12,27 +12,29 @@
     display: flex;
     background-color: #276BA2;
     width: 100%;
-    height: 3.5rem;
-    /* justify-content: flex-end; */
+    max-height: 3.5rem;
+    min-height: 2.7rem;
     filter: drop-shadow(0px 25px 12px rgba(0, 0, 0, 0.25));
     justify-content: space-between;
+    height: 100%;
 }
 
 .icon-user a{
     color: black;
     font-size: 50px;
-    padding-right: 4rem;
+    font-size: clamp(3.125em, 1em + 1vw, 1.5em);
+    padding-right: 2rem;
 }
 
 .icons1{
     padding-left: 4rem;
+    padding-left: 3%;
 }
 
 .menubar2{
     display: flex;
     background-color: #13283C;
-    max-height: 256px;
-    min-height: 180px;
+    height: 256px;
     width: 100%;
     justify-content: space-between;
 }
@@ -41,8 +43,7 @@
     padding-top: 10px;
     padding-left: 10px;
     filter: drop-shadow(0px 15px 4px rgba(0, 0, 0, 0.25));
-    max-width: 18rem;
-    min-width: 9rem;
+    width: 18rem;
 }
 
 .logo img{
@@ -56,7 +57,7 @@
 }
 
 .d-flex{
-    width:30rem;
+    width:40%;
     min-width:20rem;
     margin-top: 6.7rem;
     height: 60px;
@@ -76,13 +77,13 @@
 
 .log-cad{
     margin-top: 100px;
-    margin-right: 5.5rem;
+    margin-right: 6%;
 }
 
 .btn-primary{
     height: 65px;
     background: #276BA2;
-    font-size: 1.6rem;
+    font-size: clamp(1.25em, 1.10em, 1em);
     border-radius: 35px;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
     padding: 5px 20px;
@@ -96,7 +97,7 @@
     display: flex;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: clamp(0.7em, 0.10em, 0.5em);
     margin-left: 20px;
     margin-top: 4px;
     cursor: pointer;
@@ -130,14 +131,12 @@
     border: 0;
     background: #276BA2;
     color: white;
-    width: 250px;
-    height: 80px;
+    padding: 10px;
     font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: 0.5s ease;
     cursor: pointer;
-    /* box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .dropdown button:hover, 
@@ -163,7 +162,6 @@
 
 .dropdown ul li a{
     display: flex;
-    padding: 16px 20px;
     height: 50px;
     color: white;
     align-items: center;
@@ -208,11 +206,13 @@
     display: block;
 }
 
+.drop_mobile{
+    display: none;
+}
+
 .categoria a{
-    color: white;
-    font-size: 24px;
+    font-size: clamp(1.10em, 1.10em, 1em);
     text-decoration: none;
-    font-weight: 900;
 }
 
 .categoria .button{
@@ -222,8 +222,7 @@
     text-align: center;
     width: 100%;
     height: 80px;
-    padding-top: 15;
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 25;
     letter-spacing: 3px;
     transition: 0.5s ease;
     cursor: pointer;
@@ -374,22 +373,18 @@
 .title1{
     display: flex;
     padding-top: 40px;
-    text-align: flex-start;
-    position: flex;
-    padding-left: 27%;
+    padding-right: 8%;
+    justify-content: center;
     padding-bottom: 50;
+    justify-items: center;
 }
 
-.textdep{
-    display: flex;
-    height: 74px;
-    text-decoration: none;
+.title1 button{
+    border: none;
+    font-size: 20;
+    background: #276BA2;
     color: white;
-    background-color: #276BA2;
-    padding: 10px 10px;
-    font-size: 26px;
-    text-align: center;
-    border-radius: 25px;
+    padding: 5px 10%;
 }
 
 .container2{
@@ -404,11 +399,18 @@
     height: 500px;
 }
 
+#depimg{
+    width: 200px;
+    height: 200px;
+}
+
 .bannerpromo{
-    position: flex;
-    display: flex;
     padding-right: 9%;
-    margin-top: -120px;
+    margin-top: 40px;
+}
+
+.banner-mobile{
+    display: none;
 }
 
 /*                           FOOTER E-MAIL                      */
@@ -508,9 +510,6 @@
 #arealogin{
     background-color: #276ba2d8;
     color: white;
-    /* margin-top: 15%;
-    margin-left: 8%;
-    display: inline-block; */
     font-size: 15px;
     padding: 40px;
     border-radius: 20px;
@@ -520,8 +519,6 @@
 #areacadastro{
     background-color: #276ba2d8;
     color: white;
-    /* margin-top: 11%;
-    margin-left: 55%; */
     font-size: 15px;
     padding: 40px;
     border-radius: 20px;
@@ -576,15 +573,66 @@
 
 /*             Código de responsividade            */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .logo{
-        background: red;
-    }
-    
-    .menubar1{
-        height: 4px;
+        /* background: red; */
+        width: 140px;
+        padding-top: 2%px;
+        padding-left: 0px;
+        filter: drop-shadow(0px 15px 4px rgba(0, 0, 0, 0.25));
+        max-width: 18rem;
+        min-width: 9rem;
     }
 
+    .menubar1{
+        display: none;
+    }
+    
+    .menubar2{
+        display: flex;
+        background-color: #276BA2;
+        max-height: 256px;
+        min-height: 140px;
+        height: 80;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .form-control{
+        background-color:#ffffffb7;
+    }
+
+    .d-flex{
+        display: flex;
+        width:65%;
+        margin-top: 5%;
+        height: 60px;
+        border-radius: 50px;
+        background-color:transparent;
+    }
+
+    .btn-search{
+        width: 70px;
+        border-radius: 5px;
+        border: none;
+        font-size: 30px;
+        background-color:#ffffffb7;
+    }
+
+    .drop_mobile{
+        display: flex;
+        height: 50px;
+        margin-top: 5.5%;
+    }
+
+    .categoria{
+        display: none;
+    }
+    
+    .log-cad{
+        display: none;
+    }
+    
     .bannerpromo{
         display: none;
     }
@@ -596,6 +644,49 @@
         align-items: center;
         flex-wrap: wrap;
     }
+
+    .banner-mobile{
+        display: block;
+        width: 100%;
+
+    }
+
+    .footermail{
+        display: none;
+    }
+
+    .footerdiv{
+        display: flex;
+        width: 100%;
+        background: #152634;
+        color: white;
+        padding:10px;
+        text-decoration: none;
+        justify-content: space-around;
+    }
+    
+    .footerdiv ul li h3{
+        font-size: 18px;
+    }
+    
+    .footerdiv ul li a{
+        font-size: 14px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .depdiv,
+    .cttdiv{
+        display: none;
+    }
+
+    .gamediv{
+        position: absolute;
+        margin-top: 293px;
+        text-align: center;
+    }
+
+
 }
 
 
@@ -717,3 +808,4 @@
     justify-content: center;
     align-items: center;
 } */
+

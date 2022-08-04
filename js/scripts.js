@@ -15,12 +15,24 @@ btn_3.addEventListener("click", function(){
 })
 
 // Slider do produto
+// $(document).ready(function() {
+//     $('#autoWidth').lightSlider({
+//         autoWidth:true,
+//         loop:true,
+//         onSliderLoad: function() {
+//             $('#autoWidth').removeClass('cS-hidden');
+//         } 
+//     });  
+//   });
+
 $(document).ready(function() {
-    $('#autoWidth').lightSlider({
-        autoWidth:true,
+    var autoplaySlider = $('#autoplay').lightSlider({
+        auto:true,
         loop:true,
-        onSliderLoad: function() {
-            $('#autoWidth').removeClass('cS-hidden');
+        pauseOnHover: true,
+        onBeforeSlide: function (el) {
+            $('#current').text(el.getCurrentSlideCount());
         } 
-    });  
-  });
+    });
+    $('#total').text(autoplaySlider.getTotalSlideCount());
+});
