@@ -492,15 +492,7 @@ body{
     position: absolute;
 }
 
-#arealogin{
-    background-color: #276ba2d8;
-    color: white;
-    font-size: 15px;
-    padding: 40px;
-    border-radius: 20px;
-    width: 530px;
-}
-
+#arealogin,
 #areacadastro{
     background-color: #276ba2d8;
     color: white;
@@ -706,6 +698,52 @@ body{
         position: absolute;
         margin-top: 293px;
         text-align: center;
+    }
+
+
+
+    
+    #titlelogin{
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        padding-top: 3%;
+        padding-left: 8%;
+        font-size: 15px;
+        position: absolute;
+    }
+    
+    #arealogin,
+    #areacadastro{
+        background-color: #276ba2d8;
+        color: white;
+        font-size: 15px;
+        padding: 40px;
+        border-radius: 20px;
+        width: 98%;
+        justify-content: cv;
+    }
+    
+    .box-login-cadastro,
+    .boxlogin,
+    .boxcad{
+        display: block;
+        justify-content: center;
+        margin-top: 25%;
+        margin-bottom: 3%;
+    }
+    
+    .boxlogin{
+        padding-left: 30;
+    }
+    
+    .boxcad{
+        padding-right: 30;
+    }
+    
+    .form-login{
+        height: 55px;
+        margin-top: 20px;
     }
 
 }
