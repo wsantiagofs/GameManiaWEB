@@ -661,7 +661,7 @@ body{
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 0px;
+        margin-bottom: 60px;
     }
 
     .footermail{
