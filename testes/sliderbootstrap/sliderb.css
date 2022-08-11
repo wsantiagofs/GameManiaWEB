@@ -1,0 +1,101 @@
+.title{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.catalogo{
+    justify-content: center;
+    display: flex;
+}
+
+.item-a{
+    padding-left: 35px;
+}
+
+.tbox{
+    width: 260px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: 4%;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slide-img{
+    height: 270px;
+    position: relative;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    text-decoration: none;
+    background-color: #114e80;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.btn-comprar{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.type{
+    display:flex;
+    flex-direction: column;
+}
+
+.type a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.81rem;
+}
+
+.type span{
+    color: #ABA5A5;
+    font-size: 0.9rem;
+}
+
+#n-price{
+    color: #0FB600;
+    font-size: 1.3rem;
+}
+
+.buy-btn{
+    text-decoration: none;
+    background: #063d69;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.buy-btn ion-icon{
+    font-size: 20px;
+}
+
+.mainbox1.l1{
+    color: white;
+    font-size: 0.81em;
+}
+
+.mainbox1.l2{
+    color: #ABA5A5;
+    font-size: 0.9em;
+}
+
+.mainbox1.l3{
+    color: #0FB600;
+    font-size: 1.3em;
+}

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +9,12 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--owl carousel (carrosel de itens)-->
-    <link rel="stylesheet" href="..\..\css\owl.carousel.css">
-    <link rel="stylesheet" href="..\..\css\owl.theme.default.css">
-    <!--Jquery-->
-    <script type="text/javascript" src="js/Jquery.js"></script>
+    <link rel = "stylesheet" href = "owl_carousel/owl.carousel.css">
+    <link rel = "stylesheet" href = "owl_carousel/owl.theme.default.css">
     <!--Fonte Inter-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
-    <!--Icones ionicons-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!--Links-->
     <link rel="login" href="login.html">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -33,16 +30,16 @@
             <div class="backmenu">
                 <div class="icon-user icons1">
                 <div id="icons">
-                    <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="https://www.instagram.com/william.sant/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com"><img src="Images\icons\logo-facebook.svg" alt="facebook"></a>
+                    <a href="https://www.twitter.com"><img src="Images\icons\logo-twitter.svg" alt="twitter"></a>
+                    <a href="https://www.instagram.com/william.sant/"><img src="Images\icons\logo-instagram.svg" alt="instagram"></a>
                 </div>
             </div>
                 <div class="icons">
                     <div class="icon-user icons2">
-                        <a href="#"><ion-icon name="headset"></ion-icon></a>
-                        <a href="#"><ion-icon name="person-circle"></ion-icon></a>
-                        <a href="#"><ion-icon name="cart"></ion-icon></a>
+                        <a href="#"><img src="Images\icons\headset.svg" alt="headset"></a>
+                        <a href="#"><img src="Images\icons\person-circle.svg" alt="Área do Usuário"></a>
+                        <a href="#"><img src="Images\icons\cart.svg" alt="Carrinho"></a>
                     </div>
                 </div>
             </div>
@@ -54,7 +51,7 @@
             </div>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn-search" type="submit"><ion-icon name="search"></ion-icon></button>
+                <button class="btn-search" type="submit"><img src="Images\icons\search-outline.svg" alt="Buscar"></button>
               </form>
             <div class="log-cad">
                 <a href="login.html"><button type="button" class="btn btn-primary btn-lg">CADASTRE-SE</button></a>
@@ -66,15 +63,12 @@
             <!--DROPDOWN-->
             <div class="dropdown drop_desktop_icon">
                 <button><span class="icon">
-                    <ion-icon name="menu-outline"></ion-icon>
+                    <img src="Images\icons\menu-outline.svg" alt="Menu">
                 </span>
             <span class="text">Compre por Departamento</span></button>
                 <ul>
                     <li>
                         <a href="#">
-                            <span class="icon">
-                                <ion-icon name="hardware-chip-outline"></ion-icon>
-                            </span>
                             <span class="text">
                                 Hardware
                             </span>
@@ -82,9 +76,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon">
-                                <ion-icon name="desktop-outline"></ion-icon>
-                            </span>
                             <span class="text">
                                 Computadores
                             </span>
@@ -92,9 +83,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon">
-                                <ion-icon name="game-controller-outline"></ion-icon>
-                            </span>
                             <span class="text">
                                 Games
                             </span>
@@ -102,9 +90,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon">
-                                <ion-icon name="headset-outline"></ion-icon>
-                            </span>
                             <span class="text">
                                 Periféricos
                             </span>
@@ -112,9 +97,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon">
-                                <ion-icon name="phone-portrait-outline"></ion-icon>
-                            </span>
                             <span class="text">
                                 Smartphones
                             </span>
@@ -122,9 +104,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon">
-                                <ion-icon name="home-outline"></ion-icon>
-                            </span>
                             <span class="text">
                                 Smart Home
                             </span>
@@ -146,16 +125,15 @@
                     </li>
                 </ul>
             </div>
-            <a class="button" id="disable_mobile" href="#lancamentos">
-                LANÇAMENTOS</a>
-            <a class="button" id="disable_mobile" href="#destaques">
-                DESTAQUES</a>
-            <a class="button" id="disable_mobile" href="#perifericos">
-                PERIFÉRICOS</a>
-            <a class="button" id="disable_mobile" href="#pc-gamer">
-                PC GAMER</a>
+            <button class="button" id="disable_mobile" href="#lancamentos">
+                LANÇAMENTOS</button>
+            <button class="button" id="disable_mobile" href="#destaques">
+                DESTAQUES</button>
+            <button class="button" id="disable_mobile" href="#perifericos">
+                PERIFÉRICOS</button>
+            <button class="button" id="disable_mobile" href="#pc-gamer">
+                PC GAMER</button>
         </div>
-
         <!--BANNER CARROSSEL-->
         <div class="bannerp">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
@@ -181,7 +159,7 @@
     <main>
         <!--COR DE FUNDO DA MAIN-->
         <div id="backbody">
-            <div id="bannerdiv"></div>
+            <div id="bannerdiv"><a>https://www.linkedin.com/in/wsantiago1/</a></div>
             <!--TITULO CARROSEL 1(Promoções de Agosto)-->
             <div class="container1">
                 <div class="title">
@@ -191,7 +169,7 @@
                 <div class="container owl-carousel owl-theme">
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -202,12 +180,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -218,12 +196,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -234,12 +212,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -250,12 +228,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -266,12 +244,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -282,12 +260,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -298,12 +276,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -314,12 +292,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -330,12 +308,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -346,7 +324,7 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -359,7 +337,7 @@
                 <div class="container owl-carousel owl-theme">
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -370,12 +348,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -386,12 +364,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -402,12 +380,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -418,12 +396,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -434,12 +412,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -450,12 +428,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -466,12 +444,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -482,12 +460,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -498,12 +476,12 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                     <div class="tbox">
                         <div class="slide-img">
-                            <a href="#"><img src="..\..\Images\produto.jpg" alt="produto"></a>
+                            <a href="#"><img src="Images\produto.jpg" alt="produto"></a>
                         </div>
                         <div class="detail-box">
                             <div class="type">
@@ -514,7 +492,7 @@
                             </div>
                         </div>
                         <div class="btn-comprar">
-                            <a href="#" class="buy-btn"><ion-icon name="cart-outline"></ion-icon>Comprar</a>
+                            <a href="#" class="buy-btn">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -523,7 +501,7 @@
             <div class="container2">
                 <div class="imgdep">
                     <div class="title1">
-                        <a href="#"><button type="button">DEPARTAMENTOS</button></a>
+                        <a href="#"><button type="button" class="btn btn-primary btn-lg depbutton">DESTAQUES</button></a>
                     </div>
                     <a href="#"><img id="depimg" src="Images\departamentos.png"></a>
                     <a href="#"><img id="depimg" src="Images\departamentos.png"></a>
@@ -542,9 +520,12 @@
     </main>
     <!--Scripts JS-->
     <script type="text/javascript" src="js\scripts.js"></script>
-    <script src="..\..\js\Jquery.js"></script>
-    <script src="..\..\js\owl.carousel.js"></script>
-    <script src="..\..\js\scriptowlcarousel.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl carousel -->
+    <script src = "js/owl.carousel.js"></script>
+    <!--javascript-->
+    <script src = "scriptowl.js"></script>
 </body>
 <footer>
     <!--FOOTER INSCREVER EMAIL-->
@@ -558,9 +539,9 @@
     </div>
     <!--FOOTER DE INFORMAÇÕES GERAIS-->
     <div class="footerdiv">
-        <ul div="pagdiv">
+        <ul id="pagdiv">
             <li><h3>Formas de Pagamento</h3></li>
-            <li><img class="pagdiv" src="Images\formas-pagamento.svg">
+            <li><img src="Images\formas-pagamento.svg">
             <li><h3>Institucional</h3></li>
             <li><a href="#">Quem Somos</a></li>
             <li><a href="#">Sobre Nós</a></li>
@@ -586,7 +567,7 @@
             <li><a>(11) 99999-9999</a></li>
             <li><a>Email:</a></li>
             <li><a>faleconosco@gamemania.com</a></li>
-            <li><img src="Images\seguranca.svg"></li>
+            <li><img src="Images\seguranca.svg" width="350px" height="112px"></li>
         </ul>
         <ul class="clntdiv">
             <li><h3>Cliente</h3></li>
